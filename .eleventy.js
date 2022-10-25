@@ -22,8 +22,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     return {
         dir: {
-            input: 'src',
-            output: 'dist',
+            input: "src",
+            output: "dist",
         },
     };
 };
