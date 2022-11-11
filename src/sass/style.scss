@@ -29,7 +29,7 @@ body{
     "D D D D   D B B B   B B C C"
     "D D D D   D B B B   B B C C"
     "E E E E   E E E E   E E E E"
-    "F F F F   G G G G   G G G G";
+    "F F F F   F F G G   G G G G";
     //grid-template-rows: 1fr 1fr;
     //grid-template-columns: 1fr 1fr;
 }
@@ -76,4 +76,11 @@ body{
     column-gap : 30px ;
 }
 
+.box-7{
+    grid-area: G;
+    place-content : center / end ;
+    place-items : center / end ;       
+    row-gap : 20px ; 
+    column-gap : 30px ;
+}
 
