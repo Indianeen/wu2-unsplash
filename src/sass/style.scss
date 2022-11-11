@@ -6,38 +6,74 @@
 
 body{
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 10px;
     width: 100%;
     min-height: 100vh;
 }
 
+[class^="box-"] {
+    background-color: darkslateblue;
+  
+  /* To place the letter at the center */
+    display: grid;
+    place-items: center;
+  }
+
 .container {
     display: grid;
     gap: 20px;
-    height: 100vh;
+    height: auto;
 
     grid-template-areas: 
-    "A A A A   A A A A   A A A A"
-    "B B B B   B B B B   B B C C"
-    "B B B B   B B B B   B B C C";
+    "A A A A   A B B B   B B C C"
+    "D D D D   D B B B   B B C C"
+    "D D D D   D B B B   B B C C"
+    "E E E E   E E E E   E E E E"
+    "F F F F   G G G G   G G G G";
+    //grid-template-rows: 1fr 1fr;
+    //grid-template-columns: 1fr 1fr;
 }
 .box-1{
     grid-area: A;
+    place-content : center / end ;
+    place-items : center / end ;       
+    row-gap : 20px ; 
+    column-gap : 30px ;    
 }
 .box-2{
     grid-area: B;
+    place-content : center / end ;
+    place-items : center / end ;       
+    row-gap : 20px ; 
+    column-gap : 30px ;
 }
 .box-3{
     grid-area: C;
+    place-content : center / end ;
+    place-items : center / end ;       
+    row-gap : 20px ; 
+    column-gap : 30px ;
 }
 .box-4{
     grid-area: D;
+    place-content : center / end ;
+    place-items : center / end ;       
+    row-gap : 20px ; 
+    column-gap : 30px ;
 }
 .box-5{
     grid-area: E;
+    place-content : center / end ;
+    place-items : center / end ;       
+    row-gap : 20px ; 
+    column-gap : 30px ;
 }
 .box-6{
     grid-area: F;
+    place-content : center / end ;
+    place-items : center / end ;       
+    row-gap : 20px ; 
+    column-gap : 30px ;
 }
 
 

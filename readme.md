@@ -4,6 +4,16 @@ This is a test of 11ty and data files.
 
 11ty kan hämta data från API och filer. Detta är en test av data från en api sparad som en json fil. Ofta krävs det registrering och en nyckel får att kunna använda en API. Det här exemplet använder en sparar query från Unsplash, men om du vill så kan du registera och köra en query direkt.
 
+<!--    <h1>Data dump</h1>
+    <p>Min github user: {{ github.login }} och plats: {{ github.location }}.</p>
+    {% asyncAll  item in unsplash.results %}
+        <! <pre>{{ item | dump(2) }}</pre> -->
+        <!-- <img src="{{ item.urls.small }}" alt="{{ item.description }}"> -->
+<!--        {% image item.urls.small, item.alt_description %} -->
+  <!--  {% endall %}
+
+     {% image "https://images.unsplash.com/photo-1508361001413-7a9dca21d08a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNzQ3Nzh8MHwxfHNlYXJjaHwxfHxoYWxsb3dlZW58ZW58MHx8fHwxNjY2NTk0Mjc4&ixlib=rb-4.0.3&q=80&w=400", "photo of my cat" %} --> 
+
 https://unsplash.com/developers
 
 ## JSON
